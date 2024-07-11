@@ -1,0 +1,432 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+:root {
+  /*header*/
+  --logo-color: #343a40;
+  --header-bdb: #f1f3f5;
+  --header-bg: #fff;
+  --icon-color: #495057;
+  --font-color: #495057;
+  --btn-color: #4c80f1;
+  --btn-font-color: #f8f9fa;
+  --hover-font-color: #ff6b6b;
+  --vh: 100%;
+
+  /*date picker*/
+  --date-picker-bg: #fff;
+  --date-picker-year-bg: #fff;
+  --date-picker-bg-bd: #f1f3f5;
+  --date-picker-bg-bs: rgba(152, 152, 152, 0.25);
+  --date-picker-year-bg-bs: rgba(152, 152, 152, 0.25);
+  --date-picker-color: #495057;
+  --date-picker-select: #f1f3f5;
+  --date-picker-btn: #adb5bd;
+  --date-picker-btn-bg: #f1f3f5;
+  --date-picker-disable: #adb5bd;
+  --date-picker-title-color: #343a40;
+
+  /* time picker */
+  --time-picker-bg: #f8f9fa;
+  --time-picker-font-color: #495057;
+  --time-picker-bs: rgba(152, 152, 152, 0.6);
+
+  /*time card*/
+  --time-card-bg: #fff;
+  --time-card-bd: #f1f3f5;
+  --time-card-bs: rgba(152, 152, 152, 0.25);
+  --time-card-bt: #dee2e6;
+  --time-card-title-bg: #bcb2ff;
+  --time-card-title-color: #fff;
+  --time-card-subTitle: #495057;
+  --time-card-time: #495057;
+  --time-card-time-note: #868e96;
+  --time-card-utils-btn: #868e96;
+  --time-utils-list-bg: #fff;
+  --time-utils-list-bs: rgba(152, 152, 152, 0.6);
+  --time-utils-list-btn-bd: #f1f3f5;
+  --time-utils-delete-btn: #ff6b6b;
+  --time-utils-delete-icon: #ff6b6b;
+  --time-utils-modify-icon: #495057;
+
+  /*time card add*/
+  --time-card-add-bg: #fff;
+  --time-card-add-bs: rgba(152, 152, 152, 0.25);
+  --time-card-add-title: #868e96;
+  --time-card-add-icon: #868e96;
+  --time-input-label: #868e96;
+  --time-input-bd: #ced4da;
+  --time-input-color: #495057;
+  --time-input-icon: #868e96;
+  --time-input-clock-icon: #adb5bd;
+
+  /*main*/
+  --main-btn-bg: #e9ecef;
+  --main-btn-bg-active: #fff;
+  --main-btn-font-color: #adb5bd;
+  --main-btn-font-color-active: #495057;
+
+  /*btn*/
+  --lang-btn-bg: #fff;
+  --lang-btn-bg-bdb: #f1f3f5;
+  --lang-btn-bs: rgba(152, 152, 152, 0.25);
+  --lang-font-color: #495057;
+  --lang-hover-font-color: #ff6b6b;
+  --newSchedule-btn: #e9ecef;
+  --newSchedule-btn-color: #868e96;
+  --newSchedule-btn-icon: #d9d9d9;
+  --userGuide-icon: #ced4da;
+  --userGuide-btn-color: #adb5bd;
+  --fileUpload-btn-bg: #868e96;
+  --fileUpload-btn-color: #f8f9fa;
+  --fileUpload-btn-icon: #f8f9fa;
+  --addTime-btn-bd: #868e96;
+  --addTime-btn-color: #868e96;
+  --card-btn-color: #868e96;
+  --card-btn-bg: #f1f3f5;
+  --card-btn-save-bg: #4c80f1;
+  --card-btn-save-color: #ffffff;
+
+  /*file popup*/
+  --file-popup-bg: rgba(52, 58, 64, 0.15);
+  --file-popup-content-bg: #fff;
+  --file-popup-content-bs: rgba(152, 152, 152, 0.25);
+  --file-popup-down-txt: #495057;
+  --file-popup-down-icon: #495057;
+  --file-popup-close: #495057;
+  --file-popup-upload-bg: #868e96;
+  --file-nodata-title: #f8f9fa;
+  --file-nodata-txt: #e9ecef;
+  --file-nodata-icon: #f8f9fa;
+  --file-popup-dashed: #f8f9fa;
+  --file-item-title: #f8f9fa;
+  --file-item-icon: #f8f9fa;
+
+  /*guide*/
+  --user-guide-font: #343a40;
+
+  /*login*/
+  --login-bg: #fff;
+  --login-bs: rgba(152, 152, 152, 0.25);
+}
+
+:root.dark {
+  /*header*/
+  --logo-color: #f0f2f4;
+  --header-bdb: #1e2427;
+  --header-bg: #171b1c;
+  --icon-color: #f0f2f4;
+  --font-color: #f0f2f4;
+  --btn-color: #7099f4;
+  --btn-font-color: #171b1c;
+  --hover-font-color: #ff6b6b;
+
+  /*date picker*/
+  --date-picker-bg: #1e2427;
+  --date-picker-year-bg: #2a2e31;
+  --date-picker-bg-bd: #1e2427;
+  --date-picker-bg-bs: rgba(152, 152, 152, 0);
+  --date-picker-year-bg-bs: rgba(0, 0, 0, 0.25);
+  --date-picker-color: #f8f9fa;
+  --date-picker-select: #2a2e31;
+  --date-picker-btn: #999fa4;
+  --date-picker-btn-bg: #2a2e31;
+  --date-picker-disable: #999fa4;
+  --date-picker-title-color: #f8f9fa;
+
+  /* time picker */
+  --time-picker-bg: #1e2324;
+  --time-picker-font-color: #f0f2f4;
+  --time-picker-bs: rgba(0, 0, 0, 0.2);
+
+  /*time card*/
+  --time-card-bg: #2e363a;
+  --time-card-bd: #1e2427;
+  --time-card-bs: rgba(0, 0, 0, 0);
+  --time-card-bt: #343b3e;
+  --time-card-title-bg: #bcb2ff;
+  --time-card-title-color: #fff;
+  --time-card-subTitle: #f0f2f4;
+  --time-card-time: #f0f2f4;
+  --time-card-time-note: #adb5bd;
+  --time-card-utils-btn: #adb5bd;
+  --time-utils-list-bg: #2e363a;
+  --time-utils-list-bs: rgba(0, 0, 0, 0.6);
+  --time-utils-list-btn-bd: #1e2427;
+  --time-utils-delete-btn: #f0f2f4;
+  --time-utils-modify-icon: #f0f2f4;
+  --time-utils-delete-icon: #f0f2f4;
+
+  /*time card add*/
+  --time-card-add-bg: #2e363a;
+  --time-card-add-bs: rgba(0, 0, 0, 0.25);
+  --time-card-add-title: #f0f2f4;
+  --time-card-add-icon: #f0f2f4;
+  --time-input-label: #adb5bd;
+  --time-input-bd: #3f464b;
+  --time-input-color: #f0f2f4;
+  --time-input-icon: #f0f2f4;
+  --time-input-clock-icon: #999fa4;
+
+  /*main*/
+  --main-btn-bg: #2a2e31;
+  --main-btn-bg-active: #171b1c;
+  --main-btn-font-color: #999fa4;
+  --main-btn-font-color-active: #f0f2f4;
+
+  /*btn*/
+  --lang-btn-bg: #2e363a;
+  --lang-btn-bg-bdb: #171b1c;
+  --lang-btn-bs: rgba(0, 0, 0, 0);
+  --lang-font-color: #adb5bd;
+  --lang-hover-font-color: #f0f2f4;
+  --newSchedule-btn: #2a2e31;
+  --newSchedule-btn-color: #adb5bd;
+  --newSchedule-btn-icon: #d9d9d9;
+  --userGuide-icon: #3f464b;
+  --userGuide-btn-color: #868e96;
+  --fileUpload-btn-bg: #adb5bd;
+  --fileUpload-btn-color: #1e2324;
+  --fileUpload-btn-icon: #1e2324;
+  --addTime-btn-bd: #adb5bd;
+  --addTime-btn-color: #adb5bd;
+  --card-btn-color: #adb5bd;
+  --card-btn-bg: #1e2427;
+  --card-btn-save-bg: #7099f4;
+  --card-btn-save-color: #1e2324;
+
+  /*file popup*/
+  --file-popup-bg: rgba(0, 0, 0, 0.15);
+  --file-popup-content-bg: #2e363a;
+  --file-popup-content-bs: rgba(0, 0, 0, 0.25);
+  --file-popup-down-txt: #f0f2f4;
+  --file-popup-down-icon: #f0f2f4;
+  --file-popup-close: #f0f2f4;
+  --file-popup-upload-bg: #adb5bd;
+  --file-nodata-title: #1e2324;
+  --file-nodata-txt: #2a2e31;
+  --file-nodata-icon: #1e2324;
+  --file-popup-dashed: #1e2324;
+  --file-item-title: #1e2324;
+  --file-item-icon: #1e2324;
+
+  /*guide*/
+  --user-guide-font: #f0f2f4;
+
+  /*login*/
+  --login-bg: #1e2427;
+  --login-bs: rgba(152, 152, 152, 0);
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Pretendard", sans-serif;
+  min-height: calc(var(--vh, 1vh) * 100);
+  background-color: var(--header-bg);
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+a {
+  font-family: "Pretendard", sans-serif;
+  color: inherit;
+  text-decoration: none;
+}
+
+input {
+  font-size: 15px;
+  color: #222222;
+  border: none;
+  position: relative;
+  background: none;
+  z-index: 5;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: var(--5, #adb5bd);
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+input:focus {
+  outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-family: "Pretendard", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  vertical-align: top;
+}
+.h {
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+}
+
+button {
+  font-family: "Pretendard", sans-serif;
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: none;
+  resize: none;
+}
+label {
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 20px;
+}

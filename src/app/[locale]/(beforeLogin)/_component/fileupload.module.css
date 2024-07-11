@@ -1,0 +1,22 @@
+.fileUpLoadPopupWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--file-popup-bg);
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileUpLoadPopup {
+  position: relative;
+  padding: 40px 32px 24px;
+  width: 100%;
+  max-width: 560px;
+  border-radius: 8px;
+  background: var(--file-popup-content-bg);
+  box-shadow: 2px 2px 8px 0px var(--file-popup-content-bs);
+}

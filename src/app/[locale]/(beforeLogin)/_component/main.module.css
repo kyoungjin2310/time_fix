@@ -1,0 +1,24 @@
+.mainContainer {
+  max-width: 976px;
+  margin: auto;
+  padding-top: 152px;
+  padding-bottom: 60px;
+  min-height: calc(var(--vh, 1vh) * 100 - 64px);
+}
+.UserGuideBtnWrap {
+  position: relative;
+  max-width: 976px;
+  margin: auto;
+}
+
+.df {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timewrap {
+  padding: 20px 28px;
+  width: 464px;
+  border-radius: 16px;
+  background: var(--0, #f8f9fa);
+}

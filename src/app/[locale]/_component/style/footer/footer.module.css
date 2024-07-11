@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 23px;
+  color: var(--6, #868e96);
+  font-family: "Pretendard", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}

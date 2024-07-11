@@ -1,0 +1,48 @@
+.timePickerWrap {
+  position: relative;
+  width: 100%;
+  &::after,
+  &::before {
+    display: block;
+    content: "";
+    clear: both;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--card-btn-bg);
+  }
+  &::after {
+    top: 46px;
+  }
+  &::before {
+    bottom: 46px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 138px;
+  text-align: center;
+}
+.swiper-slide {
+  &.swiper-slide-active {
+    span {
+      color: var(--time-picker-font-color);
+    }
+  }
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    min-height: 48px;
+    text-align: center;
+    color: var(--main-btn-font-color);
+    font-family: "Pretendard", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}

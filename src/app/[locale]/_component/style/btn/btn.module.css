@@ -1,0 +1,233 @@
+/*default*/
+.btn {
+  min-width: 91px;
+  min-height: 36px;
+  padding: 8px 24px 8px 24px;
+  border-radius: 6px;
+  background: var(--btn-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: var(--btn-font-color);
+}
+
+/*lang btn*/
+.langWrap {
+  position: absolute;
+  width: 120px;
+  margin-top: 10px;
+  left: -48px;
+  border-radius: 8px;
+  filter: drop-shadow(2px 2px 8px var(--lang-btn-bs));
+  background: var(--lang-btn-bg);
+}
+
+.langWrap button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid var(--lang-btn-bg-bdb);
+  color: var(--lang-font-color);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  transition: color 0.25s ease;
+}
+
+.langWrap li:last-child button {
+  border-bottom: none;
+}
+
+.langWrap button:hover {
+  color: var(--lang-hover-font-color);
+}
+
+/*main btn*/
+.mainBtn {
+  max-width: 246px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 8px;
+  background: var(--main-btn-bg);
+  margin-bottom: 48px;
+}
+.mainBtn li {
+  display: block;
+  width: 100%;
+}
+
+.mainBtn li button {
+  display: block;
+  width: 100%;
+  color: var(--main-btn-font-color);
+  text-align: center;
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px;
+  border-radius: 8px;
+  transition: 0.25s ease;
+}
+
+.mainBtn li button.active {
+  background-color: var(--main-btn-bg-active);
+  color: var(--main-btn-font-color-active);
+}
+
+/*time utils btn*/
+.timeUtilsBtn {
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*New Schedule btn*/
+.NewSchedule {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 36px;
+  border-radius: 8px;
+  background: var(--newSchedule-btn);
+  color: var(--newSchedule-btn-color);
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.NewScheduleTxt {
+  margin-left: 4px;
+}
+
+/*add time btn*/
+.addTime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 36px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px dashed var(--addTime-btn-bd);
+  font-family: "Pretendard", sans-serif;
+  color: var(--addTime-btn-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.addTimeTxt {
+  margin-left: 4px;
+}
+
+/*Card Btn(save, cancel)*/
+.CardBtnStyle {
+  padding: 8px 12px;
+  margin-left: 8px;
+  min-height: 36px;
+  color: var(--card-btn-color);
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 8px;
+  background: var(--card-btn-bg);
+}
+
+.CardBtnStyle.save {
+  background: var(--card-btn-save-bg);
+  color: var(--card-btn-save-color);
+}
+
+/*time picker btn*/
+.timePickerBtn {
+  position: absolute;
+  right: 12px;
+  top: 34px;
+}
+
+.TimeBtnWrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*file upload btn*/
+.fileUpload {
+  display: inline-flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--fileUpload-btn-bg);
+  color: var(--fileUpload-btn-color);
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.fileUploadTxt {
+  margin-left: 2px;
+}
+
+/* popup close btn*/
+.popupCloseBtn {
+  position: absolute;
+  top: 16px;
+  right: 32px;
+}
+
+/* file down load*/
+.fileDownLoad {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.fileDownLoadTxt {
+  margin-left: 4px;
+  color: var(--file-popup-down-txt);
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration-line: underline;
+}
+
+/*user guide btn*/
+.userGuideBtn {
+  position: absolute;
+  right: 12px;
+  top: -28px;
+  color: var(--userGuide-btn-color);
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration-line: underline;
+}
+
+.userGuideBtnTxt {
+  margin-left: 2px;
+}

@@ -1,0 +1,75 @@
+.mainHeader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  width: 100%;
+  border-bottom: 1px solid var(--header-bdb);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  background-color: var(--header-bg);
+}
+
+.headerWrap {
+  max-width: 976px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.dark {
+  border-bottom: 1px solid var(--header-bdb);
+}
+
+.gnb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.left li {
+  margin-left: 47px;
+  text-align: left;
+}
+
+.left li:first-child {
+  margin-left: 56px;
+}
+
+.left li a {
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: var(--icon-color);
+}
+
+.right > li {
+  position: relative;
+  margin-left: 24px;
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--icon-color);
+}
+
+.right li.signin {
+  margin-left: 37px;
+}
+
+.right li.lang {
+  margin-left: 28px;
+}

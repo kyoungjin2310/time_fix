@@ -1,0 +1,72 @@
+.checkBoxWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc((var(--vh, 1vh) * 100) - 64px);
+}
+
+.loginBox {
+  padding: 40px 64px 48px;
+  border-radius: 16px;
+  border: 1px solid var(--header-bdb);
+  background: var(--login-bg);
+  box-shadow: 2px 2px 8px 0px var(--login-bs);
+}
+
+.loginExplanTxt {
+  margin-top: 12px;
+  margin-bottom: 36px;
+  color: var(--time-card-subTitle);
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.loginLogo {
+  margin-left: 3px;
+}
+
+input[type="checkbox"].inputCheckBox {
+  margin-left: 3px;
+  margin-right: 8px;
+}
+.inputCheckBoxWrap {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+.inputCheckBoxTitle {
+  color: var(--user-guide-font);
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.inputCheckBoxTitle span,
+.inputCheckBoxTitle a {
+  color: #4c80f1;
+  text-decoration-line: underline;
+}
+.loginBtnWrap {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.btnWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.btnTxt {
+  margin-left: 8px;
+  color: var(--btn-font-color);
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
