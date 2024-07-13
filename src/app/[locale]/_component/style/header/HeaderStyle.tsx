@@ -18,7 +18,7 @@ const HeaderStyle: NextPage<Props> = ({}) => {
   const t = useI18n();
   const router = useRouter();
   const onClick = () => {
-    router.push("/login");
+    router.push("/signin");
   };
 
   return (
@@ -36,7 +36,7 @@ const HeaderStyle: NextPage<Props> = ({}) => {
           </ul>
           <ul className={`${style.flex} ${style.right}`}>
             <li>
-              <Link href="/login">{t("login")}</Link>
+              <Link href="/signin">{t("login")}</Link>
             </li>
             <li className={style.signin}>
               <BtnStyle onEvent={onClick} opt={{ text: `${t("signIn")}` }} />

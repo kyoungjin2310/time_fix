@@ -9,6 +9,8 @@ import { useQuery } from "@tanstack/react-query";
 import { getSchedule } from "@/app/api/schedule";
 import dayjs from "dayjs";
 import { queryString } from "@/app/utils/common";
+import { useEffect } from "react";
+import axios from "axios";
 
 const Main = () => {
   const date = queryString({ date: dayjs().format("YYYY-MM") });

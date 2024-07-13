@@ -55,7 +55,7 @@ export default {
         "행동은 [1Depth,2Depth]방식으로 최대 2Depth까지 입력이 가능하며, 2Depth이후 작성되는 “ , “ 다음에는 Memo로 인식합니다.",
     },
   },
-  //login
+  //signin
   loginPage: {
     title: "서비스 이용을 위해 로그인 해주세요.",
     btnTxt: "구글로 로그인",

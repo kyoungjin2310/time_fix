@@ -16,11 +16,11 @@ function createWithAuth(url: string, options = {}): AxiosInstance {
 
 /* 공통 */
 
-//login
+//signin
 export const member = createWithAuth(`${NEXT_PUBLIC_API_URL}member/`, options);
 
 //schedule
 export const schedule = createWithAuth(
   `${NEXT_PUBLIC_API_URL}schedule/auth/`,
-  options,
+  options
 );
