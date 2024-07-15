@@ -13,7 +13,7 @@ const LoginBox = ({}) => {
 
   const onClick = () => {
     if (agree) {
-      window.open(`${process.env.NEXT_PUBLIC_GOOGLE_LOGIN_URL}`);
+      location.href = `${process.env.NEXT_PUBLIC_GOOGLE_LOGIN_URL}`;
     } else {
       alert(t("agree"));
     }
