@@ -12,8 +12,8 @@ export const getSchedule = (query: string) => {
 };
 
 //해당 날짜의 일정보기
-export const getScheduleList = () => {
-  return schedule.get("day/list");
+export const getScheduleList = (query: string) => {
+  return schedule.get(`day/list${query}`);
 };
 
 //일정 수정

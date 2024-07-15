@@ -6,26 +6,31 @@ import { DateProvider } from "./DateProvider";
 import TimeContentWrap from "./TimeContentWrap";
 import UserGuideBtn from "../../_component/style/btn/UserGuideBtn";
 import { useQuery } from "@tanstack/react-query";
-import { getSchedule } from "@/app/api/schedule";
+import { getSchedule, getScheduleList } from "@/app/api/schedule";
 import dayjs from "dayjs";
 import { queryString } from "@/app/utils/common";
-import { useEffect } from "react";
-import axios from "axios";
 
 const Main = () => {
-  const date = queryString({ date: dayjs().format("YYYY-MM") });
-  const { data, error } = useQuery({
+  const dateLength = queryString({ date: dayjs().format("YYYY-MM") });
+  const date = queryString({ date: dayjs().format("YYYY-MM-DD") });
+  const { data: schedule, error: scheduleError } = useQuery({
     queryKey: ["date", date],
-    queryFn: async () => await getSchedule(date),
+    queryFn: async () => await getSchedule(dateLength),
   });
 
-  if (error) {
-    console.log(error);
+  const { data, error } = useQuery({
+    queryKey: ["date", date],
+    queryFn: async () => await getScheduleList(date),
+  });
+
+  if (error || scheduleError) {
+    console.log(error, "error");
+    console.log(scheduleError, "scheduleError");
   }
 
-  if (data) {
+  if (data || schedule) {
     console.log(data);
-    console.log(data.data);
+    console.log(schedule);
   }
 
   return (
